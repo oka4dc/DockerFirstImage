@@ -14,3 +14,5 @@ EXPOSE 5000
 
 # run the command
 CMD ["python", "./app.py"]
+
+ docker push oka4dc/flask_sample_image 

@@ -7,10 +7,12 @@ WORKDIR /usr/src/app
 COPY . .
 
 # install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirement.txt
 
 # define the port number the container should expose
 EXPOSE 5000
 
 # run the command
 CMD ["python", "./app.py"]
+
+docker run -p 8888:5000 oka4dc/flask_sample_image
